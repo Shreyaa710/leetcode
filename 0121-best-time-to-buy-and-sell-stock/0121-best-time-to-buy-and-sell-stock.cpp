@@ -1,13 +1,6 @@
 class Solution {
 public:
     
-    // int max(int a, int b){
-    //     if(a>b){
-    //         return a;
-    //     }
-    //     return b;
-    // }
-    
     int maxProfit(vector<int>& prices) {
         int res=0,i=0;
         for(int j=1;j<prices.size();j++){
@@ -19,5 +12,7 @@ public:
             }
         }
         return res;
+        
+        
     }
 };
