@@ -7,6 +7,7 @@ public:
         
         else return b;
     }
+    
     int lengthOfLongestSubstring(string s) {
         unordered_set<char>se;
         int i=0,j=0;
@@ -15,7 +16,6 @@ public:
         {
             if(se.find(s[j]) == se.end()){
                 se.insert(s[j]);
-           
                 maxi=max(maxi,se.size());
                 j++;
             }
