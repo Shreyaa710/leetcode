@@ -25,5 +25,8 @@ public:
             res+= (ans-height[i]);
         }
         return res;
-    }
+        
+        
+        
+     }
 };
