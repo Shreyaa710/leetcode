@@ -4,6 +4,7 @@ public:
     void solve(int idx, string s, string temp,unordered_map<char,string> dialpad,vector<string> &result){
         if(idx>=s.size()){
             result.push_back(temp);
+            return;
         }
         char ch=s[idx];
         string str=dialpad[ch];
