@@ -9,7 +9,7 @@ public:
 
         for(int i=index;i<arr.size();i++)
         {
-            if(arr[i]>n) break;
+            // if(arr[i]>n) break;
             ds.push_back(arr[i]);
             construct(i+1, k-1, n-arr[i], arr, ans, ds);
             ds.pop_back();
