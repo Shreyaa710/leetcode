@@ -10,7 +10,7 @@ public:
             if(ab.find(cur-k)!=ab.end()){
                 cnt+=ab[cur-k];
             }
-            ab[cur]+=1;
+            ab[cur]++;
         }
         return cnt;
     }
