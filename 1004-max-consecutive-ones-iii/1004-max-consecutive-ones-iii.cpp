@@ -6,10 +6,12 @@ public:
         while (j < nums.size()) {
             if (nums[j] == 1) {
                 j++;
-            } else if (nums[j] == 0 && k != 0) {
+            } 
+            else if (nums[j] == 0 && k != 0) {
                 k--;
                 j++;
-            } else if (nums[j] == 0 && k == 0) {
+            } 
+            else if (nums[j] == 0 && k == 0) {
                 while (nums[i] != 0) {
                     i++;
                 }
