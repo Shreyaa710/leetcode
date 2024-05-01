@@ -1,29 +1,16 @@
 class Solution {
 public:
-    
-//     int maxfind(int a,int b)
-//     {
-//         if(a>b)
-//             return a;
-        
-//         else
-//             return b;
-//     }
-    
-    int maxSubArray(vector<int>& nums) {
-        int res=INT_MIN;
-        int sum=0;
-        for(int i=0;i<nums.size();i++){
-            if(sum+nums[i]>nums[i]){
-                sum+=nums[i];
-                res=max(res,sum);
-            }
-            else{
-                sum=nums[i];
-                res=max(res,sum);
-            }
+    int maxSubArray(vector<int>& arr) {
+        long long sum=0, maxi=arr[0];
+        for(int i=0;i<arr.size();i++)
+        {
+            sum+=arr[i];
+            
+            if(sum>maxi) maxi=sum;
+            
+            if(sum<0) sum=0;
         }
-        return res;
         
+        return maxi;
     }
 };
