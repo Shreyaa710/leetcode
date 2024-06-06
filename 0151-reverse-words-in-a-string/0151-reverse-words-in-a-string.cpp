@@ -24,6 +24,5 @@ public:
             else ans+=res;
         }
         return ans;
-        
     }
 };
